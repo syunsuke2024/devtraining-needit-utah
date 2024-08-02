@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices>7,14,21,28</choices>
+        <description>NeedIt タスクの期限が過ぎてから自動的に終了するまでの日数</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_58872_needit.autoClose期限切れ</name>
+        <read_roles>x_58872_needit.admin</read_roles>
+        <suffix>autoClose期限切れ</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-02 07:21:27</sys_created_on>
+        <sys_id>4225830947b7021046b7d9ce316d43b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_58872_needit.autoClose期限切れ</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_properties_4225830947b7021046b7d9ce316d43b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-02 07:36:42</sys_updated_on>
+        <type>choicelist</type>
+        <value>21</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=4225830947b7021046b7d9ce316d43b4"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey name="x_58872_needit.autoClose期限切れ" tablename="sys_properties">4225830947b7021046b7d9ce316d43b4</documentkey>
+        <fieldname>description</fieldname>
+        <language>ja</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-02 07:21:27</sys_created_on>
+        <sys_id>0ed50fc147f7021046b7d9ce316d43c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-02 07:21:27</sys_updated_on>
+        <tablename>sys_properties</tablename>
+        <value>NeedIt タスクの期限が過ぎてから自動的に終了するまでの日数</value>
+    </sys_translated_text>
+</record_update>
