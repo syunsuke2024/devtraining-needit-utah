@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="INSERT_OR_UPDATE">
+        <name>NeedIt Properties2</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-03 09:15:24</sys_created_on>
+        <sys_id>5859a0694773021046b7d9ce316d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt Properties2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_properties_category_5859a0694773021046b7d9ce316d4306</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-03 09:15:24</sys_updated_on>
+        <title><![CDATA[<p><span style="font-size: 12pt;"><strong>テスト</strong></span></p>
+<p>あああああああああああああああああああああああああ</p>]]></title>
+    </sys_properties_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=5859a0694773021046b7d9ce316d4306"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>5859a0694773021046b7d9ce316d4306</documentkey>
+        <fieldname>name</fieldname>
+        <language>ja</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-03 09:15:24</sys_created_on>
+        <sys_id>058964654773021046b7d9ce316d43f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-03 09:15:24</sys_updated_on>
+        <tablename>sys_properties_category</tablename>
+        <value>NeedIt Properties2</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>5859a0694773021046b7d9ce316d4306</documentkey>
+        <fieldname>title</fieldname>
+        <language>ja</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-03 09:15:24</sys_created_on>
+        <sys_id>058964654773021046b7d9ce316d43f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-03 09:15:24</sys_updated_on>
+        <tablename>sys_properties_category</tablename>
+        <value>&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;テスト&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;あああああああああああああああああああああああああ&lt;/p&gt;</value>
+    </sys_translated_text>
+</record_update>
