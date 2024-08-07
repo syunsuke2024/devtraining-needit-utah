@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Request typeの値に一致する必要な選択肢のみを表示します。</description>
+        <field>u_request_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>NeedIt Request Type Options</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (newValue == '') {
+        return;
+    }
+    var whatneeded = g_form.getValue('u_what_needed');
+    //「必要なもの」フィールドの選択肢リストからすべての選択肢をクリアします
+    g_form.clearOptions('u_what_needed');
+    //[要求の種類] フィールドの値が hr の場合は、2 つの hr の選択肢を追加し、その他を [必要なもの] フィールドの選択肢リストに追加します。
+    if (newValue == 'hr') {
+        g_form.addOption('u_what_needed', 'hr1', 'Human Resource 1');
+        g_form.addOption('u_what_needed', 'hr2', 'Human Resource 2');
+        g_form.addOption('u_what_needed', 'other', 'Other');
+    }
+    //[要求の種類] フィールドの値が facility の場合は、 2つの施設の選択肢と他のものが必要とされたフィールド選択肢リスト
+    if (newValue == 'facilities') {
+        g_form.addOption('u_what_needed', 'facilities1', 'Facilities 1');
+        g_form.addOption('u_what_needed', 'facilities2', 'Facilities 2');
+        g_form.addOption('u_what_needed', 'other', 'Other');
+    }
+    //[要求の種類] フィールドの値が正当な場合は、2つの法的選択肢とその他に必要なものフィールド 選択肢リスト
+    if (newValue == 'legal') {
+        g_form.addOption('u_what_needed', 'legal1', 'Legal 1');
+        g_form.addOption('u_what_needed', 'legal2', 'Legal 2');
+        g_form.addOption('u_what_needed', 'other', 'Other');
+    }
+    //フォームが読み込み中で、新しいレコードでない場合は、u_what_needed値をロードされる前のレコードの値
+    if (isLoading && !g_form.isNewRecord()) {
+        g_form.setValue('u_whay_need', whatneeded);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-07 01:52:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>56d4aba24773021046b7d9ce316d43d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt Request Type Options</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_56d4aba24773021046b7d9ce316d43d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-07 01:52:41</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onChange</type>
+        <u_due_date_1/>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>2e0dfdf61baef590699443f4bd4bcb24</instance_id>
+        <instance_name>dev218513</instance_name>
+        <name>sys_script_client_56d4aba24773021046b7d9ce316d43d9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Request typeの値に一致する必要な選択肢のみを表示します。&lt;/description&gt;&lt;field&gt;u_request_type&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;NeedIt Request Type Options&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (newValue == '') {
+        return;
+    }
+    var whatneeded = g_form.getValue('u_what_needed');
+    //「必要なもの」フィールドの選択肢リストからすべての選択肢をクリアします
+    g_form.clearOptions('u_what_needed');
+    //[要求の種類] フィールドの値が hr の場合は、2 つの hr の選択肢を追加し、その他を [必要なもの] フィールドの選択肢リストに追加します。
+    if (newValue == 'hr') {
+        g_form.addOption('u_what_needed', 'hr1', 'Human Resource 1');
+        g_form.addOption('u_what_needed', 'hr2', 'Human Resource 2');
+        g_form.addOption('u_what_needed', 'other', 'Other');
+    }
+    //[要求の種類] フィールドの値が facility の場合は、 2つの施設の選択肢と他のものが必要とされたフィールド選択肢リスト
+    if (newValue == 'facilities') {
+        g_form.addOption('u_what_needed', 'facilities1', 'Facilities 1');
+        g_form.addOption('u_what_needed', 'facilities2', 'Facilities 2');
+        g_form.addOption('u_what_needed', 'other', 'Other');
+    }
+    //[要求の種類] フィールドの値が正当な場合は、2つの法的選択肢とその他に必要なものフィールド 選択肢リスト
+    if (newValue == 'legal') {
+        g_form.addOption('u_what_needed', 'legal1', 'Legal 1');
+        g_form.addOption('u_what_needed', 'legal2', 'Legal 2');
+        g_form.addOption('u_what_needed', 'other', 'Other');
+    }
+    //フォームが読み込み中で、新しいレコードでない場合は、u_what_needed値をロードされる前のレコードの値
+    if (isLoading &amp;&amp; !g_form.isNewRecord()) {
+        g_form.setValue('u_whay_need', whatneeded);
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 01:52:41&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;56d4aba24773021046b7d9ce316d43d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;NeedIt Request Type Options&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_56d4aba24773021046b7d9ce316d43d9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 01:52:41&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;u_due_date_1/&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2124841490</payload_hash>
+        <record_name>NeedIt Request Type Options</record_name>
+        <reverted_from/>
+        <source>e74562894737021046b7d9ce316d432b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-07 01:52:41</sys_created_on>
+        <sys_id>c78a2b264773021046b7d9ce316d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1912a89d5290000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-07 01:52:41</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>cb8a2b2689730210d1e20ee29f7fd59a</update_guid>
+        <update_guid_history>cb8a2b2689730210d1e20ee29f7fd59a:-2124841490</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-07 05:46:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>58b474a36e3646a2ad983284751373b1</sys_id>
+        <sys_metadata>56d4aba24773021046b7d9ce316d43d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt Request Type Options</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="">8b9522c94737021046b7d9ce316d437c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_56d4aba24773021046b7d9ce316d43d9</sys_update_name>
+        <sys_update_version display_value="sys_script_client_56d4aba24773021046b7d9ce316d43d9">c78a2b264773021046b7d9ce316d439b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-07 05:46:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
